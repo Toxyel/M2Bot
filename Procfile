@@ -1,0 +1,1 @@
+mybot: node mybot.js
