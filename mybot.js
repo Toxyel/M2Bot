@@ -3,7 +3,6 @@ const bot = new Discord.Client();
 const token = process.env.token;
 const prefix = "§";
 const ownerID = process.env.author;
-}
 
 const fs = require("fs");
 
