@@ -2,7 +2,7 @@
 zbranì			10000
 	meèe		10000
 	meèe-sura	10800
-	obouruèe	11000
+	obouruèe	11100
 	dýky		12000
 	luky		13000
 	vìjíø		14000
