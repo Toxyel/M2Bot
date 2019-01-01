@@ -1,6 +1,8 @@
 ﻿const Discord = require("discord.js");
 const bot = new Discord.Client();
-const config = require("./config.json");
+const token = process.env.token;
+const prefix = "§";
+const ownerID = process.env.ownerID;
 const fs = require("fs");
 
 bot.on("ready", () =>
@@ -17,18 +19,18 @@ bot.on("message", (message) =>
   if(message.content.startsWith("jo kámo"))
     message.channel.send("V poho kámo");
 
-  if(!message.content.startsWith(config.prefix) || message.author.bot)
+  if(!message.content.startsWith(prefix) || message.author.bot)
       return;
 
 
 
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-  if(message.content.startsWith(config.prefix + config.prefix) && message.author.id == config.ownerID)
+  if(message.content.startsWith(prefix + prefix) && message.author.id == ownerID)
   {
     message.delete();
-    const acommand = command.slice(config.prefix.length);
+    const acommand = command.slice(prefix.length);
     try
     {
       let commandFile = require(`./acommands/${acommand}.js`);
@@ -55,4 +57,4 @@ bot.on("message", (message) =>
   }
 });
 
-bot.login(config.token);
+bot.login(token);
