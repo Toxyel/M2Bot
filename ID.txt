@@ -1,0 +1,46 @@
+
+zbranì			10000
+	meèe		10000
+	meèe-sura	10800
+	obouruèe	11000
+	dýky		12000
+	luky		13000
+	vìjíø		14000
+	zvon		15000
+
+brnìní			20000
+	war		20000	
+	ninja		21000
+	sura		22000
+	šaman		23000
+
+helmy			30000
+	war		30000
+	ninja		30200
+	sura		30400
+	šaman		30600
+štíty			31000
+boty			32000
+náušnice		33000
+náramky			34000
+náhrdelníky		35000
+opasky			36000
+
+Itemy		
+	upp items	50000
+	usable		51000
+	knihy		52000
+	kameny 		53000
+	ostatní		55000
+
+Pøíšery			60000
+		Metiny	63000
+NPC 			65000
+	
+
+
+Questy			70000
+OX			75000
+Bonusy 			80000
+
+
