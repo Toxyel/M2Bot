@@ -1,5 +1,0 @@
-﻿{
-  token = process.env.token,
-  "prefix": "§",
-  ownerID = process.env.author
-}
