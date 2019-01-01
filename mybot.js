@@ -1,6 +1,6 @@
 ﻿const Discord = require("discord.js");
 const bot = new Discord.Client();
-const token = process.env.token;
+const token = "lMji4p6sF2_NWS8APAmCgX79tXH1XsAT";
 const prefix = "§";
 const ownerID = process.env.author;
 
