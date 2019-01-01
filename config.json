@@ -1,5 +1,5 @@
 ﻿{
-  "token": process.env.token,
-  "prefix": "§",
-  "ownerID": process.env.author
+  const token: process.env.token,
+  const prefix: "§",
+  const ownerID: process.env.author
 }
