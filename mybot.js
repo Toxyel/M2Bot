@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+﻿const Discord = require("discord.js");
 const bot = new Discord.Client();
 const config = require("./config.json");
 const fs = require("fs");
@@ -6,18 +6,6 @@ const fs = require("fs");
 bot.on("ready", () =>
 {
   console.log("Bot has been fucking started SUCCesfully!");
-});
-
-
-fs.readdir("./events/", (err, files) =>
-{
-  if (err) return console.error(err);
-  files.forEach(file =>
-  {
-    let eventFunction = require(`./events/${file}`);
-    let eventName = file.split(".")[0];
-    bot.on(eventName, (...args) => eventFunction.run(bot, ...args));
-  });
 });
 
 bot.on("message", (message) =>
