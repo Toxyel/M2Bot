@@ -16,8 +16,11 @@ bot.on("message", (message) =>
   if(message.content.startsWith("ů"))
     message.channel.send("Ses přepsal jak piča, co?");
 
-  if(message.content.startsWith("jo kámo"))
+  if(message.content.includes("jo kámo"))
     message.channel.send("V poho kámo");
+
+  if(message.content.includes("to je blast"))
+      message.channel.send("No to je mega.");
 
   if(message.content.includes(" ?"))
     message.channel.send("Mezera před otazníkem, jo? Jaký to je, když tvůj penis je větší než tvoje IQ?")
