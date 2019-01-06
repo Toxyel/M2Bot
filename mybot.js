@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js");
+const Discord = require("discord.js");
 const bot = new Discord.Client();
 const token = process.env.token;
 const prefix = "§";
@@ -24,6 +24,9 @@ bot.on("message", (message) =>
 
   if(message.content.includes(" ?"))
     message.channel.send("Mezera před otazníkem, jo? Jaký to je, když tvůj penis je větší než tvoje IQ?")
+
+  if(message.content.includes(" !")) && ((message.content.includes("! !")) == false)
+    message.channel.send("Mezera před vykřičníkem? Jesteś cígnem?");
 
   if(!message.content.startsWith(prefix) || message.author.bot)
       return;
