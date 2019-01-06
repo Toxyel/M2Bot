@@ -22,7 +22,7 @@ bot.on("message", (message) =>
   if(message.content.includes("to je blast"))
       message.channel.send("No to je mega.");
 
-  if(message.content.includes(" ?"))
+  if((message.content.includes(" ?")) && ((message.content.include("? ?")) == false))
     message.channel.send("Mezera před otazníkem, jo? Jaký to je, když tvůj penis je větší než tvoje IQ?");
 
   if((message.content.includes(" !")) && ((message.content.includes("! !")) == false))
