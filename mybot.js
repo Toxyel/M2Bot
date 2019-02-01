@@ -29,7 +29,7 @@ bot.on("message", (message) =>
     message.channel.send("Mezera před vykřičníkem? Jesteś cígnem?");
 
   if (message.content.startsWith("Čau Martin"))
-    message.channel.send(":god:");
+    message.channel.send("<:god:487604676066410497>");
 
   if(!message.content.startsWith(prefix) || message.author.bot)
       return;
