@@ -28,14 +28,19 @@ bot.on("message", (message) =>
   if((message.content.includes(" !")) && ((message.content.includes("! !")) == false))
     message.channel.send("Mezera před vykřičníkem? Jesteś cígnem?");
 
-  /*if((mesage.content.startsWith("§lov")))
+  if((mesage.content.startsWith("§lov")))
+  {
     var skill = Math.floor(Math.random() * 3);
     if(skill == 0)
       message.channel.send("Smršť meče");
     if(skill == 1)
       message.channel.send("Silné tělo");
     if(skill == 2)
-      message.channel.send("Léčka");*/
+      message.channel.send("Léčka");
+  }
+    else {
+      message.channel.send("To teda.");
+    }
 
   if(!message.content.startsWith(prefix) || message.author.bot)
       return;
