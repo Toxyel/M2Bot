@@ -28,9 +28,11 @@ bot.on("message", (message) =>
   if((message.content.includes(" !")) && ((message.content.includes("! !")) == false))
     message.channel.send("Mezera před vykřičníkem? Jesteś cígnem?");
 
+  if (message.content.startsWith("Čau Martin"))
+    message.channel.send(":god:");
+
   if(!message.content.startsWith(prefix) || message.author.bot)
       return;
-
 
 
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
