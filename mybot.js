@@ -32,7 +32,7 @@ bot.on("message", (message) =>
     message.channel.send("<:god:487604676066410497>");
 
 
-  if(mesage.content.startsWith("§lov"))
+  if(message.content.startsWith("§lov"))
     {
       var skill = Math.floor(Math.random() * 3);
       if(skill === 0)
