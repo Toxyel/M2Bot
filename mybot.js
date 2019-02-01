@@ -5,10 +5,6 @@ const prefix = "§";
 const ownerID = process.env.ownerID;
 const fs = require("fs");
 
-var smrst_mece = 0;
-var silne_telo = 1;
-var lecka = 2;
-
 bot.on("ready", () =>
 {
   console.log("Bot has been fucking started SUCCesfully!");
