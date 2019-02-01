@@ -5,6 +5,10 @@ const prefix = "§";
 const ownerID = process.env.ownerID;
 const fs = require("fs");
 
+var smrst_mece = 0;
+var silne_telo = 1;
+var lecka = 2;
+
 bot.on("ready", () =>
 {
   console.log("Bot has been fucking started SUCCesfully!");
@@ -27,6 +31,17 @@ bot.on("message", (message) =>
 
   if((message.content.includes(" !")) && ((message.content.includes("! !")) == false))
     message.channel.send("Mezera před vykřičníkem? Jesteś cígnem?");
+
+  if((mesage.content.startsWith(§lov))
+    var skill = Math.floor(Math.random() * 3);
+    if(skill == 0)
+      message.channel.send("Smršť meče");
+    if(skill == 1)
+      message.channel.send("Silné tělo");
+    if(skill == 2)
+      message.channel.send("Léčka");
+
+
 
   if(!message.content.startsWith(prefix) || message.author.bot)
       return;
